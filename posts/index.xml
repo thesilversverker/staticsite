@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©2020</copyright>
-    <lastBuildDate>Wed, 27 May 2020 19:26:03 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 19:26:03 -0400</lastBuildDate>
     
 	<atom:link href="https://interestinginfosec.gnew.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>My First Post</title>
       <link>https://interestinginfosec.gnew.me/posts/my-first-post/</link>
-      <pubDate>Wed, 27 May 2020 19:26:03 -0400</pubDate>
+      <pubDate>Sat, 27 Jun 2020 19:26:03 -0400</pubDate>
       
       <guid>https://interestinginfosec.gnew.me/posts/my-first-post/</guid>
-      <description>This is a test set of text below the &amp;mdash;.</description>
+      <description>This is the first post on the blog. I&amp;rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&amp;rsquo;ve used the guide from Sithum Jayarathna</description>
     </item>
     
   </channel>
