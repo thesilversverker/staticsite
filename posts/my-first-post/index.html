@@ -1,168 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>My First Post // Interest In Infosec</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.71.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Curtis Agnew" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://interestinginfosec.gnew.me/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
 
-<html>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My First Post"/>
+<meta name="twitter:description" content="This is the first post on the blog. I&rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&rsquo;ve used the guide from Sithum Jayarathna
+https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1
+ Test12 Test 23  (https://google.com) www.google.com &ldquo;google.com&rdquo; ref=url.com
+what the hell"/>
 
-	<head>
-		<meta charset="utf-8"/><title>My First Post - Interest In Infosec</title>
-<meta property="og:title" content="My First Post" />
-<meta property="og:description" content="This is the first post on the blog. I&rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&rsquo;ve used the guide from Sithum Jayarathna" />
+    <meta property="og:title" content="My First Post" />
+<meta property="og:description" content="This is the first post on the blog. I&rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&rsquo;ve used the guide from Sithum Jayarathna
+https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1
+ Test12 Test 23  (https://google.com) www.google.com &ldquo;google.com&rdquo; ref=url.com
+what the hell" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://interestinginfosec.gnew.me/posts/my-first-post/" />
 <meta property="article:published_time" content="2020-06-27T19:26:03-04:00" />
 <meta property="article:modified_time" content="2020-06-27T19:26:03-04:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My First Post"/>
-<meta name="twitter:description" content="This is the first post on the blog. I&rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&rsquo;ve used the guide from Sithum Jayarathna"/>
-<meta itemprop="name" content="My First Post">
-<meta itemprop="description" content="This is the first post on the blog. I&rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&rsquo;ve used the guide from Sithum Jayarathna">
-<meta itemprop="datePublished" content="2020-06-27T19:26:03-04:00" />
-<meta itemprop="dateModified" content="2020-06-27T19:26:03-04:00" />
-<meta itemprop="wordCount" content="29">
 
 
-
-<meta itemprop="keywords" content="" /><meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="/css/normalize.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link href="https://fonts.googleapis.com/css?family=Inter|Source+Serif+Pro" rel="stylesheet" type="text/css" />
-
-<script src="/js/feather.min.js"></script>
-
-
-
-    <link rel="icon" sizes="any" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAACnUlEQVRIx6XVzWtcVRjH8c/cebkJOq1gNDi1WJLWpC9YmqAUpVDRRQUXUruy1FURRP+AlLbYQB18W7vwD1BcqLjoQrSYbSHWRhiJxJQgdNTErDSTXNOZ62JeMve20zLxWVwuz/Oc7znneX7nHP6nZRAYkt/G2E1/aeQw5KzfEqHQkyoaXZ7AQfM2E1l7fGIZdjmTYu/wupzAiFNetUcg54wHUms/axe5e2zuJe8aR8WUmTvicXtpvWzYBYeFQhMueqRXWm/AqP2d/0NG+gds+LfzH1nvH/CLq60+NHzj115pvYv4j4v+9rzYdz60dm9AwY6Et2hQ0bILhvGHqOXJJrIKW4AxryRCgyZEKSFNikWJrL1bgIpPUyuIfKbe5cmKfaWmaExowYrYwBag4XYCUNdQT/ka6kZddlxexaV2iYM+Ds+g804astOzynbfr413WsmxTv4hT/UPiNv63zoJ/QGqZjqd+cmN+wnpbuIuC72gYM60W92AIAXKClKiycnKWvKWfQoWrQqaq28OPOi1RPqASVJCOirXOV6jYNyVNmDeF3hQSaRqU1HsS3WDSmJVG7JyvlZTUJJXtUbzhsq1rseaZ5wzYd0VH6iJ1Iw675jYjLIlkZqdppwQmlV2vXlDtvf+mI88J4MRt72PostOCvCEgrdRMOVNOez2kNPJNj5tUqZVrpcNY8zxVjTwon0oOdGaMOOoI0nAQFfVQ/nOt31wC8gLu/oUJgFzljoau+ZPLKh00ucsomq2o8DFdrQNWDBtXmTNt95Tw4pLZm1Yd820Vawp+15N5GfvuJlUYsPnfnDAuh8tKyJ21SmHxW641ZroutOOCFXcbKskg0e94ffUZbXXfEpI4xZST9vjPrbSfFwf3ubjupqYZHv2HylrtUljNvuGAAAAAElFTkSuQmCC">
-
-	</head>
-
-	<body>
-		<div id="header">
-    
-        <div class="avatar">
-			<a href="https://interestinginfosec.gnew.me/">
-				<img src="/img/avatar.png" alt="Interest In Infosec" />
-			</a>
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://interestinginfosec.gnew.me/"><img class="app-header-avatar" src="/img/avatar.png" alt="Curtis Agnew" /></a>
+      <h1>Interest In Infosec</h1>
+      <p>A repository of projects and adventures. Need to reach me?</p>
+      <p><a href="/about/" target="_blank" rel="noopener">About Me</a></p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/thesilversverker/" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/silversverker/" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://reddit.com/u/thesilversverker" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/curtis.agnew" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">My First Post</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jun 27, 2020
         </div>
-    
-	<a id="headerLink" href="https://interestinginfosec.gnew.me/">Interest In Infosec</a><span class="hidden"> - </span>
-	<span id="headerSubtitle">Subtitle</span></div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>This is the first post on the blog. I&rsquo;ve decided on using <a href="https://www.gohugo.io">gohugo.io</a> and S3 bucket to host as a static page. I&rsquo;ve used the guide from <a href="https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1">Sithum Jayarathna</a></p>
+<p><a href="https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1">https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1</a></p>
+<ul>
+<li>Test12</li>
+<li>Test 23</li>
+</ul>
+<p>(<a href="https://google.com">https://google.com</a>)
+<a href="http://www.google.com">www.google.com</a>
+&ldquo;google.com&rdquo;
+ref=url.com</p>
+<p>what the hell</p>
 
-		<div id="menu">
-	
-	
-	
-	<a href="/">home</a>
-	
-	
-	<span class="right">
-		
-		
-			<a href="/about/">about</a>
-		
-	<a href="https://github.com/thesilversverker/" title="Github">
-		<i data-feather="github"></i>
-	</a><a href="https://twitter.com/silversverker/" title="Twitter">
-		<i data-feather="twitter"></i>
-	</a>
-	
-	
-	</span>
-</div>
-
-		<div id="content">
-			<div id="nav">
-  
-  
-  <ul>
-    <li>
+    </div>
+    <div class="post-footer">
       
-        <a href="/posts/">
-          <span>posts </span>
-        </a>
-      
+    </div>
+  </article>
 
-      
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      
-        <a href="/projects">
-          <span>projects </span>
-        </a>
-      
-
-      
-    </li>
-  </ul>
-  
-</div>
-			<div id="main">
-		<article>
-			<h1>My First Post</h1>
-			<div class="small right">
-				<a style="margin-right:2px;" class="u-url no-underline" 
-      href="https://www.addtoany.com/share#url=https%3a%2f%2finterestinginfosec.gnew.me%2fposts%2fmy-first-post%2f&title=My%20First%20Post">
-        <svg style="margin-bottom: -3px" class="i-external" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-          <path d="M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18"></path>
-        </svg>
-        Share
-</a>
-
-			</div>
-			<div class="light">
-	<span>27 Jun 2020</span> -
-	<span>1 minute read</span>
-</div>
-<div class="small light">
-	
-	
-</div>
-
-			<hr>
-			
-			<div>
-				<p>This is the first post on the blog. I&rsquo;ve decided on using <a href="https://www.gohugo.io">gohugo.io</a> and S3 bucket to host as a static page. I&rsquo;ve used the guide from <a href="https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1">Sithum Jayarathna</a></p>
-
-			</div>
-		</article>
-		
-		
-		
-		
-		
-		<div>
-			<div id="commento"></div>
-<script src="https://commento.example.com/js/commento.js"></script>
-		</div>
-		
-		
-
-				<div id="footer" class="light small">
-© 2020 - Curtis Agnew.
-
-<br>
-Footer Message.
-<br>
-
-This page was generated using the <a href="https://github.com/rhnvrm/bodhi">Bodhi</a> theme for Hugo.
-</div>
-
-			</div>
-
-			
-
-			
-		</div><script>feather.replace({
-			width: "1em",
-			height: "1em",
-		})
-		</script>
-		
-		<script src="/js/main.js"></script>
-	</body>
-
+    </main>
+  </body>
 </html>

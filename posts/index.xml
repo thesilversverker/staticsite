@@ -18,7 +18,10 @@
       <pubDate>Sat, 27 Jun 2020 19:26:03 -0400</pubDate>
       
       <guid>https://interestinginfosec.gnew.me/posts/my-first-post/</guid>
-      <description>This is the first post on the blog. I&amp;rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&amp;rsquo;ve used the guide from Sithum Jayarathna</description>
+      <description>This is the first post on the blog. I&amp;rsquo;ve decided on using gohugo.io and S3 bucket to host as a static page. I&amp;rsquo;ve used the guide from Sithum Jayarathna
+https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1
+ Test12 Test 23  (https://google.com) www.google.com &amp;ldquo;google.com&amp;rdquo; ref=url.com
+what the hell</description>
     </item>
     
   </channel>
